@@ -59,8 +59,8 @@ body {
 /* ---HEADER----- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .header-list {
@@ -69,8 +69,6 @@ body {
 
 .header-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .text {
@@ -183,7 +181,7 @@ body {
   color: #ffffff;
   left: 700px;
   margin-left: 500px;
-  margin-bottom: 200px;
+  padding: 10px 32px;
 }
 
 .main {
@@ -195,7 +193,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  padding-bottom: 94px;
 }
 
 .main-item {
@@ -252,7 +249,8 @@ body {
 
 .about {
   background: #f5f4fa;
-  padding-bottom: 90px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .about-title {
@@ -274,6 +272,11 @@ body {
   color: var(--first-btn-color);
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.team {
+  padding-top: 30px;
+  padding-bottom: 34px;
 }
 
 .about-list {
@@ -345,6 +348,15 @@ p {
 /*----- PORTFOLIO -----*/
 /*---- ГЕРОЙ ---*/
 
+.header-container {
+  margin-bottom: 32px;
+}
+
+.hero-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .list-btn {
   font-family: "Roboto";
   font-weight: 500;
@@ -356,15 +368,24 @@ p {
   border-radius: 4px;
 }
 
+.line::after {
+  content: "";
+  height: 1px;
+  width: auto;
+  background-color: #ececec;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+
 .container-btn {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 34px;
 }
 
 .container-btn > .portfolio-btn:not(last-child) {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .first-btn {
@@ -379,6 +400,11 @@ p {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.list-btn {
+  padding: 6px 22px;
 }
 
 .first-btn:hover,
@@ -395,6 +421,10 @@ p {
 .card-portfolio {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
+  margin-top: 34px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .card-title {
